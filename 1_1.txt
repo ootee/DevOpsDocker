@@ -1,0 +1,7 @@
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                          PORTS                    NAMES
+314dba07ac36        nginx               "nginx -g 'daemon of…"   48 seconds ago       Up 47 seconds                   80/tcp                   condescending_ritchie
+e749ee6b0dc1        nginx               "nginx -g 'daemon of…"   50 seconds ago       Exited (0) 5 seconds ago                                 naughty_lovelace
+afd6d7f3182d        nginx               "nginx -g 'daemon of…"   52 seconds ago       Exited (0) 18 seconds ago                                wonderful_bassi
+048ff232ec0e        nginx               "nginx -g 'daemon of…"   About a minute ago   Exited (0) 57 seconds ago                                loving_ritchie
+4aa8a0d41680        nginx               "nginx -g 'daemon of…"   About a minute ago   Exited (0) About a minute ago                            hopeful_pare
+1a38fecb27c2        postgres:10.1       "docker-entrypoint.s…"   19 months ago        Up 17 minutes                   0.0.0.0:5432->5432/tcp 

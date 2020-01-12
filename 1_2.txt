@@ -1,0 +1,11 @@
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+314dba07ac36        nginx               "nginx -g 'daemon of…"   3 minutes ago       Exited (0) 14 seconds ago                       condescending_ritchie
+e749ee6b0dc1        nginx               "nginx -g 'daemon of…"   3 minutes ago       Exited (0) 2 minutes ago                        naughty_lovelace
+afd6d7f3182d        nginx               "nginx -g 'daemon of…"   3 minutes ago       Exited (0) 2 minutes ago                        wonderful_bassi
+048ff232ec0e        nginx               "nginx -g 'daemon of…"   3 minutes ago       Exited (0) 3 minutes ago                        loving_ritchie
+4aa8a0d41680        nginx               "nginx -g 'daemon of…"   4 minutes ago       Exited (0) 4 minutes ago                        hopeful_pare
+1a38fecb27c2        postgres:10.1       "docker-entrypoint.s…"   19 months ago       Exited (0) 22 seconds ago                       ohtuproj
+
+C:\Users\ollit\koulu> docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+C:\Users\ollit\koulu>
