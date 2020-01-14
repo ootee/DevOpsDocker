@@ -1,0 +1,9 @@
+C:\Users\ollit\koulu\DevOpsDocker [master =]> docker run -d devopsdockeruh/exec_bash_exercise
+
+C:\Users\ollit\koulu\DevOpsDocker [master =]> docker exec -it ce2 bash
+
+root@ce2e0c684abd:/usr/app# tail -f ./logs.txt
+Sun, 12 Jan 2020 14:28:59 GMT
+Sun, 12 Jan 2020 14:29:02 GMT
+Secret message is:
+"Docker is easy"
