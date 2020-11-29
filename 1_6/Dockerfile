@@ -1,4 +1,4 @@
-FROM devopsdockeruh/overwrite_cmd_exercises
+FROM devopsdockeruh/overwrite_cmd_exercise
 
 WORKDIR /mydir 
 
