@@ -1,0 +1,7 @@
+backend
+
+$ docker run -p 8000:8000 project
+
+frontend
+
+$ docker run -p 5000:5000 project
