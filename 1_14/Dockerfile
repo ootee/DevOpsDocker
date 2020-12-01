@@ -1,17 +1,23 @@
-FROM ubuntu:16.04
+FROM ruby:2.6.0
+
+EXPOSE 3000
 
 WORKDIR /mydir
-EXPOSE 5000
 
 RUN apt-get update && apt-get -y install curl
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
 RUN apt install -y nodejs
 RUN node -v && npm -v
 
+RUN gem install bundler
+
 COPY . .
 
-RUN npm install
-RUN API_URL=http://localhost:8000 npm run build
-RUN npm install -g serve
+RUN bundle install
+RUN rails db:migrate
 
-CMD serve -s -l 5000 dist
+CMD rails s
+
+
+
+
