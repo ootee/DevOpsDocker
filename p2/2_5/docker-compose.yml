@@ -1,0 +1,30 @@
+version: '3.5'
+
+services:
+    backend:
+      build:
+        context: ./backend/backend-example-docker/
+      environment:
+        - FRONT_URL=http://localhost:8000
+        - REDIS=redis
+      ports:
+        - 8000:8000
+      links:
+        - redis
+      command: "npm start"
+
+    frontend:
+      build:
+        context: ./frontend/frontend-example-docker
+      environment:
+        - API_URL=http://localhost:5000
+      ports: 
+        - 5000:5000
+      command: "serve -s -l 5000 dist"
+
+    redis:
+      image: redis
+      ports: 
+        - 6379:6379
+      command: "redis-server"
+      
