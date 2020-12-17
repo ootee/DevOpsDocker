@@ -1,0 +1,8 @@
+Changed environment variable         
+
+FRONT_URL=http://localhost:5000
+
+to 
+
+FRONT_URL=http://localhost
+
